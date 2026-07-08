@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f068565-967b-4cac-a69f-b99e1227f05e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/apache-maven-3.8.2" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2E4S9r8EImnzSoAoBVkPwcesAue" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/毕业设计/qpss/edu-server",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/c:/file/fileupload" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/c:/file/fileupload" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js/admin" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js/admin/edu" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EduApplication">
+    <configuration name="EduApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.wfuhui.EduApplication" />
+      <module name="edu-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wfuhui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="views.admin in edu-server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="edu-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="views.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="views.admin" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EduApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="edu-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wfuhui.EduApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EduApplication" />
+      <item itemvalue="JUnit.views.admin in edu-server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EduApplication" />
+        <item itemvalue="JUnit.views.admin in edu-server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Yibao\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f068565-967b-4cac-a69f-b99e1227f05e" name="Changes" comment="" />
+      <created>1661853215326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661853215326</updated>
+      <workItem from="1664523890353" duration="159000" />
+      <workItem from="1664524086753" duration="2390000" />
+      <workItem from="1664610193143" duration="11917000" />
+      <workItem from="1664700825040" duration="33297000" />
+      <workItem from="1665204207558" duration="35189000" />
+      <workItem from="1665317218978" duration="1597000" />
+      <workItem from="1665382049056" duration="7337000" />
+      <workItem from="1665450491733" duration="2096000" />
+      <workItem from="1665468045737" duration="7019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
