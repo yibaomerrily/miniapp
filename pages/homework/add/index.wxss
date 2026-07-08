@@ -1,0 +1,19 @@
+/* pages/publish/index.wxss */
+
+.auth {
+  text-align: center;
+}
+
+.auth .big {
+  font-size: 30rpx;
+}
+
+.auth .small {
+  font-size: 28rpx;
+  color: #888;
+  margin-bottom: 10rpx;
+}
+
+page{
+  background: #f7f7f7
+}

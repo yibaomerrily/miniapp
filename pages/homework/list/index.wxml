@@ -1,0 +1,9 @@
+<!--pages/homework/index.wxml-->
+<view class="container">
+  <view class="item" wx:for="{{homeworkList}}" wx:key="index">
+      <view class="title">{{item.homeworkName}}</view>
+      <view class="name">{{item.remark}}</view>
+      <view wx:if="{{item.picUrl}}"><image src="{{item.picUrl}}"></image></view>
+      <view class="time">{{item.createTime}}</view>
+  </view>
+</view>

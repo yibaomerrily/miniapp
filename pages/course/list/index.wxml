@@ -1,0 +1,25 @@
+<!--pages/course/index.wxml-->
+<view class="container">
+  <view class="contentDiv" wx:for="{{courseList}}" wx:key="index">
+    <view class="contentNextDiv" bindtap="getPage" data-item = "{{item}}">
+      <view class="picDiv">
+        <image style="width: 62px; height: 62px;"  mode="scaleToFill" src="/images/doc.png" wx:if="{{item.courseType == 'doc'}}"></image>
+        <image style="width: 62px; height: 62px;"  mode="scaleToFill" src="/images/video.png" wx:elif="{{item.courseType == 'video'}}"></image>
+        <image style="width: 62px; height: 62px;"  mode="scaleToFill" src="/images/pic.png" wx:elif="{{item.courseType == 'img'}}"></image>
+        <image style="width: 62px; height: 62px;"  mode="scaleToFill" src="/images/noneFile.png" wx:else></image>
+      </view>
+      <view class="nameLable">
+      {{item.courseName}}
+      </view>
+      <view class="addressLable">
+      地点：{{item.address}}
+      </view>
+      <view class="timeDiv">
+        {{item.courseTime!=null && item.courseTime!=""?item.courseTime:""}}
+      </view>
+      <view class="lineDiv">
+        <image style="width: 24px; height: 24px;" mode="scaleToFill" src="/images/jinrujiantou.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

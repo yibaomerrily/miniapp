@@ -1,0 +1,36 @@
+<!--pages/sign/index.wxml-->
+<view class="container">
+  <form bindsubmit="saveAttendance">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">班级</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindClsChange" range="{{clsList}}" range-key="clsName">
+            <view class="weui-select weui-select_in-select-after">{{clsList[clsIndex].clsName}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell" wx:for="{{userList}}">
+        <view class="weui-cell__bd">
+        <view>{{item.realName}}({{item.loginName}})</view>
+        
+        <view>
+          <radio-group name="{{item.id}}">
+            <radio value="1">出勤</radio>
+            <radio value="2">缺勤</radio>
+            <radio value="3">迟到</radio>
+            <radio value="4">请假</radio>
+          </radio-group>
+        </view>
+
+        </view>
+        
+      </view>
+    </view>
+    <view class="weui-btn-area">
+      <button type="primary" class="weui-btn" form-type="submit">保存</button>
+    </view>
+  </form>
+</view>

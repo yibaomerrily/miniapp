@@ -1,0 +1,8 @@
+<!--pages/course/index.wxml-->
+<view class="container">
+  <view class="item" wx:for="{{courseList}}">
+      <view class="title">{{item.user.realName}}</view>
+      <view class="name">{{item.status == 1 ? '出勤' : item.status == 2 ? '缺勤' : item.status == 3 ? '迟到' : item.status == 4 ? '请假' : ''}}</view>
+      <view class="time">{{item.createTime}}</view>
+  </view>
+</view>

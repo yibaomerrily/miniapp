@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="userinfo">
+    <image src='{{ userInfo.avatarUrl }}' class='userinfo-avatar' bindtap="uploadAvatar">
+    </image>
+  </view>
+  <form bindsubmit="bindSave">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="realName" placeholder="请输入姓名" value='{{userInfo.realName}}' />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">手机号码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="mobile" placeholder="请输入手机号码" value='{{userInfo.mobile}}' />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_check">
+        <view class="weui-cell__hd">
+          <view class="weui-label">性别</view>
+        </view>
+        <view class="weui-cell__bd">
+          <radio-group bindchange="genderChange" name="gender">
+            <radio value="1" checked="{{userInfo.gender == 1}}">男</radio>
+            <radio value="0" checked="{{userInfo.gender == 0}}">女</radio>
+          </radio-group>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">职称</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="position" placeholder="请输入职称" value='{{userInfo.position}}' />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">学科</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="subject" placeholder="请输入学科" value='{{userInfo.subject}}' />
+        </view>
+      </view>
+
+    </view>
+    <view class="weui-btn-area">
+      <button type="primary" formType="submit">提交</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,111 @@
+.pic {
+  background-color: white;
+  width: calc(100%-20px);
+  height: 30vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.btBlack {
+  display: grid;
+  height: 31vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px;
+  background-color: white;
+  width: calc(100%-40px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+  position: relative;
+  width: 80px;
+  height: 76px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.btnPic {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+}
+
+.btnText {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  top: 56px;
+  left: 0;
+
+  /* Subhead/Regular */
+  color: rgb(34, 41, 46);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.0030000000949949026%;
+  text-align: center;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.show {
+  display: block;
+  background-color: white;
+  width: calc(100%-20px);
+  height: 25vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.showContent {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  margin-top: 10px;
+}
+
+.showImg {
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+}
+
+.showText1 {
+  position: absolute;
+  width: calc(100%-20vh);
+  padding: 10px;
+  margin-left: 20vh;
+  margin-top: 2vh;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.003000000026077032%;
+  text-align: left;
+}
+.showText2 {
+  position: absolute;
+  width: calc(100%-20vh);
+  padding: 10px;
+  margin-left: 20vh;
+  margin-top: calc(20vh - 45px);
+  color: rgb(138, 138, 142);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.0007999999797903001%;
+  text-align: left;
+}

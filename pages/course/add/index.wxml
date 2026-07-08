@@ -1,0 +1,60 @@
+<!--pages/courseCopy/add/index.wxml-->
+<view class="mycontainer">
+	<view class="formDiv">
+		<view class="inputDiv">
+			<label class="lableTitle">课程名称</label>
+			<!-- <input bindinput="bindKeyInput" placeholder="" value="{{courseName}}" /> -->
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{courseList}}" range-key="remark">
+    <view class="picker">
+      {{courseName}}
+    </view>
+  </picker>
+		</view>
+		<view class="inputDiv">
+			<label class="lableTitle">课程地点</label>
+			<input bindinput="bindKeyAddress" placeholder="" value="{{address}}" style="white-space:pre-wrap"/>
+		</view>
+		<view class="inputDiv">
+			<label class="lableTitle">课程时间</label>
+			<picker mode="date" value="{{courseTime}}" start="2015-09-01" value="{{courseTime}}"
+				bindchange="bindKeyCourseTime">
+				<view class="picker">
+					{{courseTime}}
+				</view>
+			</picker>
+		</view>
+		<view class="inputDiv">
+			<label class="lableTitle">上传文件类型</label>
+			<radio-group class="radio-group" bindchange="radioChange">
+				<label class="radio" wx:for="{{items}}" wx:key="name">
+					<radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+				</label>
+			</radio-group>
+		</view>
+		<view class="inputDiv">
+			<label class="lableTitle">选择文件</label>
+			<label class="lableStycle">{{fileName}}
+			</label>
+			<icon class="iconfont icon-shanchu" wx:if="{{fileName != ''}}" catchtap="delFileSelect"></icon>
+			<button class="btn btnSelect" bindtap="addFileSelect" wx:if="{{fileName == ''}}">
+				<view class="tips">+</view>请选择文件
+			</button>
+
+		</view>
+	</view>
+	<view class="formDiv" style="height:40%;background-color: #FFFFFF;padding:3px" wx:if="{{courseType == 'img'}}">
+		<image wx:if="{{tempImagePath != ''}}" class="showFile" mode="{{mode}}" src="{{tempImagePath}}">
+		</image>
+	</view>
+	<view class="formDiv" style="height:40%;background-color: #FFFFFF;padding:3px" wx:if="{{courseType == 'video'}}">
+		<video src="{{tempVideoPath}}" wx:if="{{tempVideoPath != ''}}" class="showFile"></video>
+	</view>
+	<!-- <view class="formDiv">
+		<button type="primary" class="saveBtn" bindtap="saveFile">保存</button>
+	</view> -->
+	<view class="formDiv">
+  <view class="button-sp-area">
+		<button type="primary" bindtap="saveFile">保存</button>
+	</view>
+	</view>
+</view>

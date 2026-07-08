@@ -1,0 +1,29 @@
+/* pages/attendance/index.wxss */
+
+page{
+  height: 100%;
+  background: #eee;
+}
+
+.container{
+  padding: 15rpx;
+}
+
+.item{
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.name{
+  font-size: 32rpx;
+}
+
+.time{
+  font-size: 28rpx;
+}
+
+.name{
+  font-size: 28rpx;
+}

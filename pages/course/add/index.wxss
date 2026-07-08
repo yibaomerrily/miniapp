@@ -1,0 +1,120 @@
+/* pages/courseCopy/add/index.wxss */
+.mycontainer {
+  background-color: rgb(232, 243, 255);
+  grid-template-columns: auto;
+  grid-template-rows: 40% 50% 10%;
+  align-items: center;
+  padding: 8px;
+  height: 100vh;
+
+  /* 16/Regular */
+  color: rgb(29, 33, 41);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.399999976158142;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.formDiv {
+  /* 自动布局 */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.inputDiv {
+  background-color: #FFFFFF;
+  /* 自动布局 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+  margin-top: 1px;
+  width: 100%;
+  height: 50px;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.showFile {
+  width: 100%;
+  padding: 3px;
+}
+.btn {
+  border: none;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.btnSelect {
+  width: 120px;
+  color: white;
+  background-color: #4CAF50;
+  border: #4CAF50;
+  margin-left: 10px;
+}
+
+.delBtn {
+  width: 90px;
+  align-items: center;
+  background-color: white;
+  border: none;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 5px;
+}
+.tips {
+  position: static;
+  width: 16px;
+  height: 16px;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAMcAA0AAAAABzQAAALFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCZhEICoF8ggYLCgABNgIkAxAEIAWFAgcyG0sGyJ4FdotziH0f47GJDEN8Y8WjYTz8u/Z5X5L5m4UyKEJHEhUQ2ipgV9W1BVkFrOtREh1PoMfq99O9JDo29skwKWqrAdVnuGSmQraahKrxtQS+ise3X+gsma032RvsKclC1C4qpuSrf2Iowf9/P/m3LmiWP/W7vN1Vc2u0z74NJIEGNo+mCosS2plNcKwj3oDeJuISgr7WQsCrG1MrfNm975Q7daAPI0ESsiwUJJQi+jWkS2lcBt4fXy2IStJknHjNoaWGm/apmVsmf3QeAYDJCA0yZoGCpQjskRVh2qyeSTmjQZKgbWFHyycxHkAYFLNBMWSiowNjJDB+HoJw22hbCRRQkbAZnAFQAJDGLw73D67mk7Bhn9Yfjht39Vdx8x4KStYL9JpTyYaXKt74KgO6+XlJWdbzYuUTKzGSuflNfaOl5vwG585nKsJ4c+/HFooWDX30mzQEpsawR3eIDu/hQ7Ql3E3QkL9XXKgOJWmojv/6Ii00lDjfH4TADXhrVvg/kfI3By+lcvFRPnbcPWi3D7rH71KyfXDQBgPv8Ne21co2pVRvDmyExg4AAsGIs/JLG7Tkf4ViQsy3pn2ZfwZUCQSDuPOOAvJN/B9DKYCCwhqEYrMMSOjRgxbAUB8CMEwRgVCtQiDpchiBrLogQFFdF6DR67EAHdUHAXrMjCUI9BoW/bIo3ZgCNhsGm7LJQJvZbLAQK9QZ2xjpmu0Y7JbtscnnqF5T4oi5hE7GqlgjKE7kNlUoYNQw3JuHJRKW8CpI4QyeiXV0phWPLIEfsClNrhyUb6JLpOxKoaWuCWe31lv1ZlZsRfuALunjMak1UxtjBsGQCPmEjSKSOo+YCQlR+CsOnYrV4b5/ebo228zGaQ9ecYUjl+NnwJ8DjmAsMtbQYJQcqVPr9OMoDm2GXRusZo6FsBV6sK4FIUXqOn7kn/o8KwAAAA==') format('woff2'),
+      url('data:font/woff;charset=utf-8;base64,d09GRgABAAAAAATgAA0AAAAABzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAExAAAABoAAAAclGLsG0dERUYAAASkAAAAHgAAAB4AKQAKT1MvMgAAAaAAAABEAAAAYFY0Ys5jbWFwAAAB9AAAAFIAAAFmADoG9Gdhc3AAAAScAAAACAAAAAj//wADZ2x5ZgAAAlQAAADgAAAA/HNCrLloZWFkAAABMAAAADAAAAA2IdgJEmhoZWEAAAFgAAAAHQAAACQHiAOFaG10eAAAAeQAAAAPAAAAEAwAAFBsb2NhAAACSAAAAAoAAAAKAH4AAG1heHAAAAGAAAAAHgAAACABEABjbmFtZQAAAzQAAAFGAAACgl6CAQJwb3N0AAAEfAAAACAAAAAy0el12XjaY2BkYGAAYtW62D3x/DZfGbhZGEDgfnxSJ5wO+H+FeRWzPpDLwcAEEgUAJ5kKy3jaY2BkYGBu+N/AEMPCAALMqxgYGVABCwBTlAMWAAAAeNpjYGRgYGBhCGdgYgABEMkFhAwM/8F8BgARYwF0AAB42mNgYWFgnMDAysDA1Ml0hoGBoR9CM75mMGLkAIoysDIzYAUBaa4pDAf+AwFzw/8GBgbmOwxAkoERSYkCAyMApHIOr3jaY2GAABYIDgAAANAAXQB42t2MsQ2AMAwEz0mgQEhpKRgBtmAQ9l8ifD40rMBZp5detoEJyPKQRV4EnVttuM8s7gubMmlEa7ZvrN7fGQQ1Tuu/MfM+VCbffwl+zwNOEwYwAAAAAAAAAAAAAAB+AAB42mNgYgj4f4V5FbM+gzRDGAODqrq5mYmaEj+jupoSm4g8IzubiJiRPaO4mJGZibmJuhpQmJ0NKCguJi5mbGRuBlbNrgwUUlYCyZqAhIxAsqIi7KJsokDdZuaGZkwbJk9m4xVmmzyJXZiXfdIkdl5h9kmT2YR5v1hZJqa8TE20tAIyUks8nB0sWLgFWBkNLW3ss6IjjE1NjSOiL4MYOozcfFxMBu+BRgjxgYzgEwIaAWJPngxkzypJSbS0tgaZBmJIiGmx8XGzqgqLwA0AMTKTgxmZmTi42dliGRgAOoUz9njafZDNSsNAFIXP9E9tQcSC61kVQUh/lqW7Qt25cFHXbTpJW5JMmEwLXbp15QO49TF8AJ9BcOWDeBqvCBWakMs3595zZiYALvEJhZ+njWthhVPcCVdwgli4Sv1RuEZ+Ea6jhTfhBvUP4SZu1Ei4hbZ6ZoKqnXHVKdP2rHCBkXAF53gQrlK3wjXyk3AdV3gVblB/F25iii/hFjpqiTEcDGbwrAtozLFjXSFkboaorB4YOzPzZqHnO70KbRbZjOK/qb/WPeNibJAw2nFp4k0yc0ctR1pTpjkUHNm3NPoI0KNsXLGyme4HvaP2W9qzMuLwngW2POaAqqdR83O0p6SJxBheISFr5GVvTSWkHjDWZMb9/pViGw+8j3TkbKon3NYkidW5s2sTeg4vyz1yDNHlGx2kB+XhU455nw+73UgCgtCm+AYPanCHAAB42mNgYoAALjDJyIAOWMCiTIxM7MUZiXnJGaUADqwDCQAAAAH//wACAAEAAAAMAAAAFgAAAAIAAQADAAMAAQAEAAAAAgAAAAB42mNgYGBkAIKrS9Q5QPT9+KROGA0APV8F/AAA') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.lableStycle {
+  text-overflow :ellipsis; /*让截断的文字显示为点点。还有一个值是clip意截断不显示点点*/
+	white-space :nowrap; /*让文字不换行*/
+  overflow : hidden; /*超出要隐藏*/
+}
+.lableTitle{
+  width: 101px;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shanchu:before {
+  content: "\f012d";
+}

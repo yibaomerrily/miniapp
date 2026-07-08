@@ -1,0 +1,56 @@
+<!--pages/scan/index.wxml-->
+<!-- <view class="container">
+      <swiper indicator-dots="true" autoplay="true" interval="3000" duration="800" class="swiper-banner bg-white">
+    <block wx:for="{{banners}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" mode="scaleToFill" style="width:100%;height:400rpx;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <span></span>
+  <span></span>
+  <span></span>
+  <view class="page__bd">
+    <view class="weui-grids">
+    <block wx:for="{{menuList}}" wx:key="index">
+      <navigator url="{{item.url}}" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="{{item.icon}}" />
+        <view class="weui-grid__label">{{item.name}}</view>
+      </navigator>
+    </block>
+  </view>
+  </view>
+
+</view> -->
+<view class="container" style="background-color:  rgb(251, 251, 251);">
+  <view>
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="800" class="pic">
+      <block wx:for="{{banners}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" mode="scaleToFill" style="width: 100%;"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="btBlack">
+    <view wx:for="{{menuList}}" wx:key="index">
+      <navigator url="{{item.url}}" class="btn" hover-class="weui-grid_active">
+        <image src="{{item.icon}}" class="btnPic" />
+        <view class="btnText">{{item.name}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="show">
+  <view>
+  热门课程
+  </view>
+  <view class="showContent">
+  <view class="showImg">
+    <image src="{{hotItem.url}}" mode="scaleToFill" style="width: 20vh;height: 20vh;"></image>
+  </view>
+  <view class="showText1">{{hotItem.name}}</view>
+  <view class="showText2">科普人:{{hotItem.userId}}</view>
+  </view>
+  </view>
+
+</view>

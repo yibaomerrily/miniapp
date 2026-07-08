@@ -1,0 +1,25 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">旧密码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="oldPassword" placeholder="请输入旧密码" value='' />
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">新密码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="password" placeholder="请输入新密码" value='' />
+        </view>
+      </view>
+    </view>
+    <view class="weui-btn-area">
+      <button type="primary" formType="submit">确定</button>
+    </view>
+  </form>
+</view>

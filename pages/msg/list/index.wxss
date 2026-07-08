@@ -1,0 +1,43 @@
+/* pages/msg-list/index.wxss */
+page{
+  background:rgb(250, 228, 201);
+}
+
+.container {
+  height: 100%;
+  background:rgb(250, 228, 201); 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 10px;
+} 
+
+.list {
+  background:#caebeb;
+  border-radius: 20px;
+  padding: 20rpx;
+  margin-bottom: 0rpx;
+  height: 70px;
+}
+
+.list .title {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.list .time{
+  font-size: 28rpx;
+  color: #555;
+  margin-bottom: 16rpx;
+}
+
+.list .content {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+}

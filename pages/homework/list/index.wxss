@@ -1,0 +1,36 @@
+/* pages/homework/index.wxss */
+
+page{
+  height: 100%;
+  background: #eee;
+}
+
+.container{
+  padding: 15rpx;
+  background-color:rgb(250, 228, 201);
+}
+
+.item{
+  background:#caebeb;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  height: 70px;
+}
+
+.name{
+  font-size: 32rpx;
+}
+
+.time{
+  font-size: 28rpx;
+}
+
+.name{
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+image{
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+<loading hidden="{{ !loading }}">加载中...</loading>
+<view style="margin:10px 15px 10px 15px">
+    <view class="photo item" style="height:300px;line-height: 24px;">
+        <view class="photo-box" style="width:100px;margin:0 auto;padding-top:10px;">
+            <image src="/images/logo.png" style="border-radius: 100px" class="personal_logo" id="personal_logo"></image>
+        </view>
+        <view class="feedbackText">
+            <text>巧培少思致力于研究开发一个能够使高校大学生们实现自我价值，投身志愿服务，教授科技知识与实践能力，从而让青少年们得到更多接触科学发明的机会，以达到培养青少年们对科学浓厚兴趣，有足够的资源发展个性化爱好的平台。
+            </text>
+        </view>
+    </view>
+    <view class="h1"></view>
+    <view class="h1"></view>
+    <view class="item" style='padding:5px 15px 0px 15px;'>
+        <text style='margin-left:10px;margin-top:5px;'>团队地址:</text>
+        <span class="value-right" bindtap="openLocation">成都师范学院成都校区</span>
+    </view>
+    <view class="h1"></view>
+    <view class="item" style='padding:5px 5%;'>
+        <button class='submit' bindtap="toAuth" type="submit">
+            联系我们
+        </button>
+    </view>
+</view>

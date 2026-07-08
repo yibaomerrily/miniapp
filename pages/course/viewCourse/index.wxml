@@ -1,0 +1,19 @@
+<!--pages/courseCopy/viewCourse/index.wxml-->
+<view class="container">
+  <view style="width: 100vw;height:99vh;overflow: auto; background-color:white;" >
+    <image style="width:100%;" mode="widthFix" src="{{src}}" bindtap="bindClickImg" binderror="closeLoading" bindload="closeLoading" wx:if="{{courseType == 'img'}}"></image>
+    <video 
+      id="myVideo" 
+      style="width:100%;"
+      wx:if="{{courseType == 'video'}}"
+      src="{{src}}"
+      binderror="closeLoading" 
+      show-center-play-btn='{{false}}' 
+      show-play-btn="{{true}}" 
+      bindloadedmetadata = "closeLoading"
+      enable-auto-rotation = "{{vidoSet.enableAutoRotation}}"
+      show-screen-lock-button = "{{vidoSet.showScreenLockButton}}"
+      show-snapshot-button = "{{vidoSet.showSnapshotButton}}"
+    ></video>
+  </view>
+</view>

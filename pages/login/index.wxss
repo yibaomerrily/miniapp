@@ -1,0 +1,26 @@
+/* pages/login/login.wxss */
+page{
+  height: 200%;
+}
+
+.container{
+  padding: 15rpx;
+  background-color:rgb(250, 228, 201);
+}
+.weui-cells_after-title {
+  margin: 5px;
+  background-color:rgb(250, 228, 201);
+}
+
+.weui-cell_input {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(172, 228, 209);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.btn{
+border-radius: 10px;
+width: 50%;
+}

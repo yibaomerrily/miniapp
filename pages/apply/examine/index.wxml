@@ -1,0 +1,16 @@
+<!--pages/attendance/index.wxml-->
+<view class="container">
+  <view class="item" wx:for="{{attendanceList}}">
+      <view class="title">{{item.remark}}</view>
+      <view wx:if="{{item.picUrl}}"><image src="{{item.picUrl}}"></image></view>
+      <view class="time">{{item.user.realName}}</view>
+      <view class="name">{{item.status == 0 ? '待审核' : item.status == 1 ? '已同意' : item.status == 2 ? '已拒绝' : ''}}</view>
+      <view class="time">{{item.createTime}}</view>
+
+      <view style="text-align: right">
+        <button size="mini" data-id="{{item.id}}" type="primary" style="margin-right: 6rpx" bindtap="confirmOk" wx:if="{{item.status == 0}}">同意</button>
+        <button size="mini" data-id="{{item.id}}" type="warn" bindtap="confirmFail" wx:if="{{item.status == 0}}">拒绝</button>
+        <button size="mini" wx:if="{{item.status != 0}}" type="info">{{item.status == 1 ? '已同意' : item.status == 2 ? '已拒绝' : ''}}</button>
+      </view>
+  </view>
+</view>

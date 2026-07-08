@@ -1,0 +1,57 @@
+<view class='container'>
+  <form bindsubmit='save'>
+    <view class="weui-cells weui-cells_after-title">
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">开始日期</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="date" bindchange="changeDate">
+              <view class="weui-input">{{date}}</view>
+            </picker>
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">结束日期</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker mode="date" bindchange="changeEndDate">
+              <view class="weui-input">{{endDate}}</view>
+            </picker>
+        </view>
+      </view>
+
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+            <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                    <view class="weui-uploader__title">图片上传</view>
+                </view>
+                <view class="weui-uploader__bd">
+                    <view class="weui-uploader__file" wx:if="{{picUrl}}">
+                        <image class="weui-uploader__img" src="{{picUrl}}" mode="aspectFill" />
+                    </view>
+                    <view class="weui-uploader__input-box">
+                        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea name="remark" class="weui-textarea" placeholder="请输入课程内容" style="height: 5.3em" />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-btn-area">
+      <button type="primary" class="weui-btn" form-type="submit">提交</button>
+    </view>
+  </form>
+
+</view>
